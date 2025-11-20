@@ -7,45 +7,45 @@ const RecipesSection = () => {
   const recipes = [
     {
       id: 1,
-      title: 'Смузи-боул с ягодами',
-      time: '10 мин',
-      difficulty: 'Легко',
-      description: 'Питательный завтрак с антиоксидантами',
-      tips: ['Используйте замороженные ягоды для густой консистенции', 'Добавьте семена чиа для омега-3']
+      title: 'Smoothie bowl s bobulemi',
+      time: '10 min',
+      difficulty: 'Snadné',
+      description: 'Vyvážená snídaně s antioxidanty',
+      tips: ['Použijte mrazené bobulové ovoce pro hustou konzistenci', 'Přidejte chia semínka pro omega-3']
     },
     {
       id: 2,
-      title: 'Салат с киноа',
-      time: '25 мин',
-      difficulty: 'Средне',
-      description: 'Полноценный обед с растительным белком',
-      tips: ['Промывайте киноа перед варкой', 'Добавьте авокадо для полезных жиров']
+      title: 'Salát s quinoou',
+      time: '25 min',
+      difficulty: 'Střední',
+      description: 'Plný obed s rostlinnými bílkovinami',
+      tips: ['Quinoa opáchněte před vařením', 'Přidejte avokádo pro zdravé tuky']
     },
     {
       id: 3,
-      title: 'Энергетические батончики',
-      time: '15 мин',
-      difficulty: 'Легко',
-      description: 'Полезный перекус для активного дня',
-      tips: ['Храните в холодильнике до 2 недель', 'Используйте финики вместо сахара']
+      title: 'Energetické tyčinky',
+      time: '15 min',
+      difficulty: 'Snadné',
+      description: 'Zdravá svačina pro aktivní den',
+      tips: ['Skladujte v lednici až 2 týdny', 'Použijte datlový cukr místo řepného']
     }
   ];
 
   const healthTips = [
-    { icon: 'Apple', title: 'Сезонные продукты', text: 'Выбирайте овощи и фрукты по сезону' },
-    { icon: 'Droplet', title: 'Водный баланс', text: 'Пейте не менее 2 литров воды в день' },
-    { icon: 'Sun', title: 'Витамин D', text: 'Проводите время на свежем воздухе' },
-    { icon: 'Leaf', title: 'Органика', text: 'Выбирайте органические продукты' }
+    { icon: 'Apple', title: 'Sezónní potraviny', text: 'Vyberte zeleninu a ovoce podle sezóny' },
+    { icon: 'Droplet', title: 'Vodní balanč', text: 'Pijte nejméně 2 litry vody denně' },
+    { icon: 'Sun', title: 'Vitamin D', text: 'Trávte čas venku na sluínku' },
+    { icon: 'Leaf', title: 'Bio produkty', text: 'Volte organické produkty' }
   ];
 
   return (
     <section id="recipes" className="py-20 bg-secondary/30">
       <div className="container px-4">
         <div className="text-center space-y-4 mb-12 animate-fade-in">
-          <Badge variant="outline" className="text-primary border-primary">👨‍🍳 Рецепты и советы</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold">Здоровое питание</h2>
+          <Badge variant="outline" className="text-primary border-primary">👨‍🍳 Recepty a rady</Badge>
+          <h2 className="text-3xl md:text-5xl font-bold">Zdravá výživa</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Проверенные рецепты и советы по правильному питанию от наших экспертов
+            Ověřené recepty a rady ke zdravé výživě od našich expertů
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const RecipesSection = () => {
                 <CardDescription>{recipe.description}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-2">
-                <p className="text-sm font-medium">Советы:</p>
+                <p className="text-sm font-medium">Rady:</p>
                 <ul className="space-y-1">
                   {recipe.tips.map((tip, tidx) => (
                     <li key={tidx} className="text-sm text-muted-foreground flex gap-2">
@@ -77,7 +77,7 @@ const RecipesSection = () => {
               <CardFooter>
                 <Button variant="outline" className="w-full gap-2">
                   <Icon name="ChefHat" size={16} />
-                  Смотреть рецепт
+                  Zobrazit recept
                 </Button>
               </CardFooter>
             </Card>
@@ -85,7 +85,7 @@ const RecipesSection = () => {
         </div>
 
         <div className="bg-card rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Советы по здоровому питанию</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">Rady ke zdravé výživě</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {healthTips.map((tip, idx) => (
               <div key={idx} className="text-center space-y-3 p-4 rounded-xl hover:bg-secondary/50 transition-colors animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>

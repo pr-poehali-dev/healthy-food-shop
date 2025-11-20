@@ -16,28 +16,28 @@ const Header = ({ scrollToSection }: HeaderProps) => {
         
         <nav className="hidden md:flex gap-6">
           <button onClick={() => scrollToSection('home')} className="text-sm font-medium hover:text-primary transition-colors">
-            Главная
+            Domů
           </button>
           <button onClick={() => scrollToSection('catalog')} className="text-sm font-medium hover:text-primary transition-colors">
-            Каталог
+            Katalog
           </button>
           <button onClick={() => scrollToSection('recipes')} className="text-sm font-medium hover:text-primary transition-colors">
-            Рецепты
+            Recepty
           </button>
           <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:text-primary transition-colors">
-            О нас
+            O nás
           </button>
           <button onClick={() => scrollToSection('delivery')} className="text-sm font-medium hover:text-primary transition-colors">
-            Доставка
+            Doprava
           </button>
           <button onClick={() => scrollToSection('contacts')} className="text-sm font-medium hover:text-primary transition-colors">
-            Контакты
+            Kontakty
           </button>
         </nav>
 
         <Button size="sm" className="gap-2">
           <Icon name="ShoppingCart" size={18} />
-          <span className="hidden sm:inline">Корзина</span>
+          <span className="hidden sm:inline">Košík</span>
         </Button>
       </div>
     </header>

@@ -11,16 +11,16 @@ const InfoSections = () => {
         <div className="container px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <Badge variant="outline" className="text-primary border-primary">🌿 О нас</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold">Мы делаем здоровое питание доступным</h2>
+              <Badge variant="outline" className="text-primary border-primary">🌿 O nás</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold">Děláme zdravou výživu dostupnou</h2>
               <p className="text-muted-foreground leading-relaxed">
-                HealthyFood — это команда энтузиастов здорового образа жизни. Мы верим, что правильное питание 
-                должно быть не только полезным, но и вкусным, а также доступным каждому.
+                HealthyFood je tým nadšenců pro zdravý životní styl. Věříme, že zdravá výživa 
+                musí být nejen zdravá, ale i chutná a dostupná pro každého.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Мы работаем напрямую с фермерами и производителями органической продукции, 
-                чтобы предложить вам лучшее качество по справедливым ценам. Каждый продукт проходит 
-                строгий контроль качества и имеет все необходимые сертификаты.
+                Spolupracujeme přímo s farmami a výrobci organických produktů, 
+                abychom vám nabídli tu nejlepší kvalitu za spravedlivé ceny. Každý produkt prochází 
+                přísnou kontrolou kvality a má všechny potřebné certifikáty.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-3">
@@ -28,8 +28,8 @@ const InfoSections = () => {
                     <Icon name="Award" className="text-primary" size={20} />
                   </div>
                   <div>
-                    <p className="font-bold">5 лет</p>
-                    <p className="text-sm text-muted-foreground">на рынке</p>
+                    <p className="font-bold">5 let</p>
+                    <p className="text-sm text-muted-foreground">na trhu</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -38,7 +38,7 @@ const InfoSections = () => {
                   </div>
                   <div>
                     <p className="font-bold">10 000+</p>
-                    <p className="text-sm text-muted-foreground">клиентов</p>
+                    <p className="text-sm text-muted-foreground">zákazníků</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -47,7 +47,7 @@ const InfoSections = () => {
                   </div>
                   <div>
                     <p className="font-bold">500+</p>
-                    <p className="text-sm text-muted-foreground">товаров</p>
+                    <p className="text-sm text-muted-foreground">produktů</p>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const InfoSections = () => {
             <div className="relative animate-scale-in">
               <img
                 src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
-                alt="О нас"
+                alt="O nás"
                 className="rounded-2xl shadow-xl"
               />
             </div>
@@ -67,10 +67,10 @@ const InfoSections = () => {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-4 mb-12 animate-fade-in">
-              <Badge variant="outline" className="text-primary border-primary">🚚 Доставка</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold">Удобная доставка</h2>
+              <Badge variant="outline" className="text-primary border-primary">🚚 Doprava</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold">Pohodlná doprava</h2>
               <p className="text-muted-foreground">
-                Мы доставляем свежие продукты прямо к вашей двери
+                Dodáváme čerstvé produkty přímo k vašim dveřím
               </p>
             </div>
 
@@ -78,18 +78,18 @@ const InfoSections = () => {
               {[
                 {
                   icon: 'MapPin',
-                  title: 'По всему городу',
-                  desc: 'Доставляем во все районы Москвы и Подмосковья'
+                  title: 'Po celé Praze',
+                  desc: 'Dodáváme do všech částí Prahy a okolí'
                 },
                 {
                   icon: 'Clock',
-                  title: 'В день заказа',
-                  desc: 'При заказе до 12:00 доставим в тот же день'
+                  title: 'Den objednávky',
+                  desc: 'Při objednávce do 12:00 dodáme stejný den'
                 },
                 {
                   icon: 'Banknote',
-                  title: 'Бесплатно от 2000₽',
-                  desc: 'При заказе от 2000₽ доставка бесплатно'
+                  title: 'Zdarma od 500 Kč',
+                  desc: 'Při objednávce od 500 Kč doprava zdarma'
                 }
               ].map((item, idx) => (
                 <Card key={idx} className="text-center p-6 animate-scale-in" style={{ animationDelay: `${idx * 100}ms` }}>
@@ -103,19 +103,19 @@ const InfoSections = () => {
             </div>
 
             <Card className="p-8">
-              <h3 className="text-xl font-bold mb-4">Стоимость доставки</h3>
+              <h3 className="text-xl font-bold mb-4">Cena dopravy</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center py-2 border-b">
-                  <span className="text-muted-foreground">По Москве (в пределах МКАД)</span>
-                  <span className="font-semibold">200₽</span>
+                  <span className="text-muted-foreground">Praha (včetně okolí)</span>
+                  <span className="font-semibold">50 Kč</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b">
-                  <span className="text-muted-foreground">Подмосковье (до 20 км от МКАД)</span>
-                  <span className="font-semibold">350₽</span>
+                  <span className="text-muted-foreground">Okolí Prahy (do 20 km)</span>
+                  <span className="font-semibold">90 Kč</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b">
-                  <span className="text-muted-foreground">При заказе от 2000₽</span>
-                  <span className="font-semibold text-primary">Бесплатно</span>
+                  <span className="text-muted-foreground">Při objednávce od 500 Kč</span>
+                  <span className="font-semibold text-primary">Zdarma</span>
                 </div>
               </div>
             </Card>
@@ -127,10 +127,10 @@ const InfoSections = () => {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-4 mb-12 animate-fade-in">
-              <Badge variant="outline" className="text-primary border-primary">📞 Контакты</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold">Свяжитесь с нами</h2>
+              <Badge variant="outline" className="text-primary border-primary">📞 Kontakty</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold">Kontaktujte nás</h2>
               <p className="text-muted-foreground">
-                Мы всегда рады ответить на ваши вопросы
+                Rádi odpovíme na vaše otázky
               </p>
             </div>
 
@@ -141,9 +141,9 @@ const InfoSections = () => {
                     <Icon name="Phone" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Телефон</h3>
-                    <p className="text-muted-foreground">+7 (495) 123-45-67</p>
-                    <p className="text-sm text-muted-foreground mt-1">Пн-Вс: 8:00 - 22:00</p>
+                    <h3 className="font-semibold mb-1">Telefon</h3>
+                    <p className="text-muted-foreground">+420 123 456 789</p>
+                    <p className="text-sm text-muted-foreground mt-1">Po-Ne: 8:00 - 22:00</p>
                   </div>
                 </div>
                 <Separator />
@@ -153,7 +153,7 @@ const InfoSections = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@healthyfood.ru</p>
+                    <p className="text-muted-foreground">info@healthyfood.cz</p>
                   </div>
                 </div>
                 <Separator />
@@ -162,19 +162,19 @@ const InfoSections = () => {
                     <Icon name="MapPin" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">Адрес</h3>
-                    <p className="text-muted-foreground">г. Москва, ул. Здоровья, д. 15</p>
+                    <h3 className="font-semibold mb-1">Adresa</h3>
+                    <p className="text-muted-foreground">Praha 1, Zdravotní 15</p>
                   </div>
                 </div>
               </Card>
 
               <Card className="p-6">
-                <h3 className="font-semibold text-lg mb-4">Напишите нам</h3>
+                <h3 className="font-semibold text-lg mb-4">Napište nám</h3>
                 <form className="space-y-4">
                   <div>
                     <input
                       type="text"
-                      placeholder="Ваше имя"
+                      placeholder="Vaše jméno"
                       className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     />
                   </div>
@@ -187,14 +187,14 @@ const InfoSections = () => {
                   </div>
                   <div>
                     <textarea
-                      placeholder="Ваше сообщение"
+                      placeholder="Vaše zpráva"
                       rows={4}
                       className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                     />
                   </div>
                   <Button className="w-full gap-2">
                     <Icon name="Send" size={18} />
-                    Отправить
+                    Odeslat
                   </Button>
                 </form>
               </Card>

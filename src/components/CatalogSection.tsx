@@ -7,35 +7,35 @@ const CatalogSection = () => {
   const products = [
     {
       id: 1,
-      name: 'Органические овощи',
-      description: 'Свежие сезонные овощи с фермерских хозяйств',
-      price: '450₽/кг',
+      name: 'Bio zelenina',
+      description: 'Čerstvá sezónní zelenina z farem',
+      price: '120 Kč/kg',
       image: 'https://cdn.poehali.dev/projects/89b5c4eb-a50c-4d25-a37a-f46be2df6583/files/7cdb9674-ec2a-4002-b4fb-d27f82d2ed7c.jpg',
-      badge: 'ЭКО'
+      badge: 'BIO'
     },
     {
       id: 2,
-      name: 'Смузи-боул',
-      description: 'Готовая смесь для полезного завтрака',
-      price: '320₽',
+      name: 'Smoothie bowl',
+      description: 'Hotová směs pro zdravé snídaní',
+      price: '85 Kč',
       image: 'https://cdn.poehali.dev/projects/89b5c4eb-a50c-4d25-a37a-f46be2df6583/files/b3ef9ac0-4e09-4fa9-9516-a2f9743ca913.jpg',
-      badge: 'ХИТ'
+      badge: 'HIT'
     },
     {
       id: 3,
-      name: 'Микс орехов и семян',
-      description: 'Полезный перекус на каждый день',
-      price: '580₽',
+      name: 'Mix ořechů a semeneček',
+      description: 'Zdravá svačina na každý den',
+      price: '155 Kč',
       image: 'https://cdn.poehali.dev/projects/89b5c4eb-a50c-4d25-a37a-f46be2df6583/files/3d84fab7-aa0e-46d8-b1ab-052f08b9647c.jpg',
-      badge: 'СУПЕРФУД'
+      badge: 'SUPERFOOD'
     },
     {
       id: 4,
-      name: 'Киноа органическая',
-      description: 'Белковая крупа без глютена',
-      price: '420₽',
+      name: 'Bio quinoa',
+      description: 'Bílkoviná kroupy bez lepku',
+      price: '110 Kč',
       image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400',
-      badge: 'НОВИНКА'
+      badge: 'NOVINKA'
     }
   ];
 
@@ -43,10 +43,10 @@ const CatalogSection = () => {
     <section id="catalog" className="py-20">
       <div className="container px-4">
         <div className="text-center space-y-4 mb-12 animate-fade-in">
-          <Badge variant="outline" className="text-primary border-primary">🛒 Наши продукты</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold">Популярные товары</h2>
+          <Badge variant="outline" className="text-primary border-primary">🛒 Naše produkty</Badge>
+          <h2 className="text-3xl md:text-5xl font-bold">Oblíbené produkty</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Тщательно отобранные органические продукты для вашего здоровья
+            Pečlivě vybrané bio produkty pro vaše zdraví
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const CatalogSection = () => {
                 <span className="text-2xl font-bold text-primary">{product.price}</span>
                 <Button size="sm" className="gap-2">
                   <Icon name="Plus" size={16} />
-                  В корзину
+                  Do košíku
                 </Button>
               </CardFooter>
             </Card>
@@ -74,7 +74,7 @@ const CatalogSection = () => {
 
         <div className="text-center mt-12">
           <Button size="lg" variant="outline" className="gap-2">
-            Показать все товары
+            Zobrazit všechny produkty
             <Icon name="ArrowRight" size={18} />
           </Button>
         </div>
